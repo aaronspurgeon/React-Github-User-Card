@@ -38,14 +38,14 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Github User Card</h1>
-        <div>
+        <div className="user">
           <img src={this.state.avi} alt="Profile"/>
           <h2>{this.state.name}</h2>
           <p>{this.state.title}</p>
           <span>Follower Count: {this.state.followerCount}</span>
           <span>Following Count: {this.state.followingCount}</span>
         </div>
-        <h2>Follower Info</h2>
+        <h2>Followers</h2>
         <Followers />
       </div>
     )

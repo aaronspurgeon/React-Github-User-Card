@@ -35,7 +35,7 @@ class Followers extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="followerContainer">
                 {this.state.follower.map((item, index) => (
                     <FollowerInfo item={item} key={index} />
                 ))}
