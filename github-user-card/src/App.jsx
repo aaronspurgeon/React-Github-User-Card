@@ -11,8 +11,7 @@ class App extends React.Component {
       name: '',
       title: '',
       followerCount: '',
-      followingCount: '',
-      follwers: []
+      followingCount: ''
     }
   }
 
@@ -46,6 +45,8 @@ class App extends React.Component {
           <span>Follower Count: {this.state.followerCount}</span>
           <span>Following Count: {this.state.followingCount}</span>
         </div>
+        <h2>Follower Info</h2>
+        <Followers />
       </div>
     )
   }
